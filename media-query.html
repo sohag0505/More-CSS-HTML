@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media-Query</title>
+    <style>
+        .container {
+            display: flex;
+        }
+        
+        @media screen and (max-width:576px) {
+            .container {
+                display: flex;
+                gap: 10px;
+                flex-direction: column;
+                border: 2px solid aquamarine;
+                margin: 15px;
+                padding: 10px;
+            }
+            .img img {
+                width: 100%;
+                margin: auto;
+            }
+        }
+        
+        @media screen and (min-width:577px) and (max-width:1120px) {
+            .container {
+                display: flex;
+                gap: 20px;
+                flex-direction: column;
+                border: 2px solid aquamarine;
+                margin: 30px;
+                padding: 20px;
+            }
+            .img img {
+                width: 100%;
+                margin: auto;
+            }
+        }
+        
+        @media screen and (min-width:1121px) and (max-width:1800px) {
+            .container {
+                display: flex;
+                gap: 35px;
+                flex-direction: row;
+                border: 2px solid aquamarine;
+                margin: 40px;
+                padding: 30px;
+            }
+            .img img {
+                width: 100%;
+                margin: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="img">
+            <img src="images/sundarban.jpg" alt="">
+        </div>
+        <div class="sundarban">
+            <h2>Visited Sunderban</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, voluptas! Quaerat minima perspiciatis mollitia iste praesentium harum, fugit error sapiente tempore a, architecto doloremque ex deserunt cum recusandae saepe doloribus. Dignissimos
+            recusandae temporibus debitis quod tenetur quisquam tempora, asperiores inventore mollitia quae earum! Corrupti dolorem ea, quasi consectetur repudiandae fugiat autem, nostrum similique, dolorum delectus inventore officia dolor voluptatum
+            provident a vel laudantium accusamus? Tempora, sed debitis dolores ad ipsam ipsum, repudiandae, dolore excepturi aspernatur at asperiores nemo odio soluta.
+        </div>
+    </div>
+</body>
+
+</html>
